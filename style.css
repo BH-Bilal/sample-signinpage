@@ -1,19 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,200&display=swap');
+* {
+    font-family: 'poppins', sans-serif;
+    ;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    width: 400px
+    width: 400px;
+    background: #525E75;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: white;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     width: 100%;
+    background: #F1DDBF;
+    background-size: cover;
 }
 
-label {
-    padding: 1rem 0px;
+.margin label {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 button {
@@ -22,16 +46,25 @@ button {
 }
 
 .forget-link {
-    display: flex;
-    justify-content: space-between;
+    color: white;
+    text-decoration: none;
 }
 
-.forget-link label {
-    padding: 0rem;
+.forget-link:hover {
+    text-decoration: underline;
 }
 
 span {
     margin: 10px 0px;
+    color: #525E75;
+}
+
+span a {
+    text-decoration: none;
+}
+
+span a:hover {
+    text-decoration: underline;
 }
 
 .login {
@@ -39,14 +72,24 @@ span {
     text-align: center;
     padding: .5rem;
     color: black;
-    background-color: grey;
+    background-color: whitesmoke;
     margin: 10px auto;
     width: 5rem;
     border-radius: 5px;
 }
 
-input {
+.login:hover {
+    background-color: antiquewhite;
+}
+
+.inp {
     padding: 2px 5px;
+    width: 18rem;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
+    border: 0px;
 }
 
 .radio {
@@ -74,8 +117,13 @@ input {
     border-radius: 50%;
 }
 
-@media screen and (max-width:700px) {
+.margin {
+    margin: 10px;
+}
+
+
+/* @media screen and (max-width:700px) {
     .login {
         background-color: thistle;
     }
-}
+} */
