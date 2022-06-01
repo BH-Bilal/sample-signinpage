@@ -1,5 +1,5 @@
 function OTP() {
-    alert("OTP Sent")
+    alert("OTP sent successfully")
 }
 
 function register() {
